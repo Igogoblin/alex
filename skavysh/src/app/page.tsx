@@ -1,3 +1,22 @@
+import Container from "@/components/container/container";
+import Line from "@/components/line/Line";
+import MainHead from "@/components/main/head/main-head";
+import PaynetChildren from "./children/paynetChidren";
+import AvoDark from "./avodark/avoDark";
+
 export default function Home() {
-  return <h1>Main</h1>;
+  return (
+    <main>
+      <Container>
+        <MainHead />
+      </Container>
+      <Container>
+        <Line />
+        <PaynetChildren />
+      </Container>
+      <Container>
+        <AvoDark />
+      </Container>
+    </main>
+  );
 }

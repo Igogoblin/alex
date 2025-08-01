@@ -30,3 +30,11 @@ body {
   justify-content: space-between;
   position: relative;
 }
+
+h2 {
+  color: var(--color-neutral-800);
+  font-size: 20px;
+  font-family: "Noto Sans";
+  font-weight: 500;
+  line-height: 28px;
+}

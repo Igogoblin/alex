@@ -10,7 +10,7 @@ const dataMainHead = {
 };
 export default function MainHead() {
   return (
-    <section>
+    <section className={style.mainHead}>
       <h1 className={style.title}>
         {dataMainHead.title1}
         <Image src={avatar} alt="avatar" width={54} height={54} unoptimized />

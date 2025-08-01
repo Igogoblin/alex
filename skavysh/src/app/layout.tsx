@@ -4,9 +4,6 @@ import "./globals.css";
 import Header from "@/components/header/Header";
 import Footer from "@/components/Footer";
 import Container from "@/components/container/container";
-import MainHead from "@/components/main/head/main-head";
-import Line from "@/components/line/Line";
-import PaynetChildren from "./children/paynetChidren";
 
 const noto = Noto_Sans({
   variable: "--font-noto-sans",
@@ -30,14 +27,7 @@ export default function RootLayout({
         <Container>
           <Header />
         </Container>
-        <Container>
-          <MainHead />
-          {children}
-        </Container>
-        <Container>
-          <Line />
-          <PaynetChildren />
-        </Container>
+        {children}
         <Container>
           <Footer />
         </Container>
