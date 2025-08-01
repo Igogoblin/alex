@@ -1,0 +1,15 @@
+.children {
+  display: flex;
+  gap: 24px;
+  align-items: end;
+}
+.title {
+  /* align-self: stretch; */
+  /* color: #2b2d31;*/
+  color: var(--color-neutral-800);
+  font-size: 20px;
+  font-family: "Noto Sans";
+  font-weight: 500;
+  line-height: 28px;
+  /* word-wrap: break-word; */
+}

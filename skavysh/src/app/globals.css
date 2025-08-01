@@ -19,7 +19,14 @@
 }
 
 body {
-  background: var(--background);
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: #fafbfb;
   color: var(--foreground);
-  font-family: var(--font-sans);
+  font-family: var(--font-noto-sans), sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
 }

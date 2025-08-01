@@ -1,0 +1,22 @@
+.title {
+  /* display: flex; */
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  /* line-height: 52px; */
+  color: var(--color-bg-neutral-bold-800);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.text {
+  width: 816px;
+  /* color: #4e5052; */
+  color: var(--color-bg-neutral-bold-600);
+  font-size: 16px;
+  font-family: "Noto Sans";
+  font-weight: 400;
+  line-height: 24px;
+  word-wrap: break-word;
+}
