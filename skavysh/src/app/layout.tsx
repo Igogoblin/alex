@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
 import { Noto_Sans } from "next/font/google";
 import "./globals.css";
+import "../styles/_variables.css";
 import Header from "@/components/header/Header";
 import Footer from "@/components/Footer";
 import Container from "@/components/container/container";
+import MainContact from "@/components/main/contact/main-contact";
 
 const noto = Noto_Sans({
   variable: "--font-noto-sans",
@@ -28,6 +30,9 @@ export default function RootLayout({
           <Header />
         </Container>
         {children}
+        <Container>
+          <MainContact />
+        </Container>
         <Container>
           <Footer />
         </Container>

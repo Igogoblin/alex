@@ -1,0 +1,12 @@
+.mainVisual {
+  display: flex;
+  flex-wrap: wrap;
+}
+.visual_design {
+  /* color: var(--neutral-80, #2b2d31); */
+  text-align: left;
+  font-family: "Noto Sans";
+  font-size: 40px;
+  line-height: 52px;
+  font-weight: 500;
+}
