@@ -4,22 +4,24 @@ import style from "./header.module.css";
 import Link from "next/link";
 import arrowLeft from "../../../public/arrowLeft.svg";
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 const MenuBlock = () => {
   const pathname = usePathname();
   const [activeHash, setActiveHash] = useState("");
   const isHomePage: boolean = pathname === "/";
-  const menuItems = isHomePage
-    ? [
-        { text: "product cases", href: "#product" },
-        { text: "visual design", href: "#visual" },
-        { text: "contact", href: "#contact" },
-      ]
-    : [
-        { text: "works", href: "#works" },
-        { text: "about me", href: "#about" },
-        { text: "contact", href: "#contact" },
-      ];
+  const menuItems = useMemo(() => {
+    return isHomePage
+      ? [
+          { text: "product cases", href: "#product" },
+          { text: "visual design", href: "#visual" },
+          { text: "contact", href: "#contact" },
+        ]
+      : [
+          { text: "works", href: "#works" },
+          { text: "about me", href: "#about" },
+          { text: "contact", href: "#contact" },
+        ];
+  }, [isHomePage]);
 
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
@@ -39,7 +41,7 @@ const MenuBlock = () => {
     return () => {
       elements.forEach((el) => observer.unobserve(el));
     };
-  }, [pathname]);
+  }, [pathname, menuItems]);
   return (
     <nav className={style.menuBlock}>
       {menuItems.map((item, index) => {
