@@ -1,0 +1,95 @@
+.children {
+  display: flex;
+  gap: 24px;
+  align-items: end;
+}
+.title {
+  color: var(--color-neutral-800);
+  font-size: 20px;
+  font-family: "Noto Sans";
+  font-weight: 500;
+  line-height: 28px;
+  /* word-wrap: break-word; */
+  margin-bottom: 24px;
+}
+@media screen and (max-width: 1200px) {
+  .children {
+    flex-direction: column-reverse;
+  }
+}
+/* children head -------------------------------------------------- */
+.children__head {
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+  margin: 60px 0;
+}
+.children__head_title {
+  color: var(--color-neutral-80);
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 52px;
+}
+
+/* children about ------------------------------------------------ */
+.children__about {
+  display: flex;
+  flex-direction: column;
+}
+.about_container {
+  display: flex;
+}
+.about_title {
+  max-width: 380px;
+  width: 100%;
+  color: var(--primary-50);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+}
+.children__about_title {
+  color: var(--color-neutral-80);
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 52px;
+}
+.subtitle_text {
+  color: var(--color-neutral-80);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+}
+.subtitle_description {
+  color: var(--color-neutral-60);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-top: 16px;
+}
+/* children figure ------------------------------*/
+
+/* children resume ------------------------------ */
+@media screen and (max-width: 1000px) {
+  .about_title {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .subtitle_text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .subtitle_description {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .about_container {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .children__head_title {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}

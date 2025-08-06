@@ -1,0 +1,15 @@
+.avoDark {
+  display: flex;
+  gap: 24px;
+  align-items: end;
+  margin: 48px 0;
+  /* padding: 0 50px; */
+}
+.avoDark h2 {
+  margin-bottom: 24px;
+}
+@media screen and (max-width: 1200px) {
+  .avoDark {
+    flex-direction: column;
+  }
+}
