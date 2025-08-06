@@ -5,7 +5,7 @@ import childrenAbout from "../../../../public/children/childrenAbout.jpg";
 import Image from "next/image";
 export default function ChildrenAbout() {
   return (
-    <section className={style.children__about}>
+    <section className={style.children__about} id="about">
       <div className={style.about_container}>
         <div className={style.about_title}>{ChildrenData.about.title}</div>
         <div className={style.about_subtitle}>

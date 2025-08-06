@@ -4,7 +4,7 @@ import style from "../children.module.css";
 
 export default function ChildrenHead() {
   return (
-    <section className={style.children__head}>
+    <section className={style.children__head} id="works">
       <h1 className={style.children__head_title}>
         Paynet social project for children with disabilities
       </h1>

@@ -4,6 +4,9 @@ import ChildrenAbout from "./children-about/childrenAbout";
 import childrenCentral from "../../../public/children/childrenCentral.jpg";
 import Image from "next/image";
 import ChildrenFigure from "./children-figure/childrenFigure";
+import ChildrenResume from "./children-resume/childrenResume";
+import NextProject from "@/components/next-project/next-project";
+import avodark from "../../../public/avoDark/avoDark.jpg";
 
 export default function Children() {
   return (
@@ -24,6 +27,10 @@ export default function Children() {
       <Container>
         <ChildrenFigure />
       </Container>
+      <Container>
+        <ChildrenResume />
+      </Container>
+      <NextProject link={"/avodark"} image={avodark} />
     </main>
   );
 }

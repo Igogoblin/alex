@@ -22,31 +22,33 @@ const MenuBlock = () => {
       ];
 
   useEffect(() => {
-    console.log("isHomePage", isHomePage);
-    console.log("window.location.hash", window.location.hash);
-    console.log("aktiveHash", activeHash);
-    if (isHomePage) {
-      const handleHashChange = () => {
-        setActiveHash(window.location.hash);
-      };
-      handleHashChange();
-      window.addEventListener("hashchange", handleHashChange);
-      return () => {
-        window.removeEventListener("hashchange", handleHashChange);
-      };
-    } else {
-      setActiveHash("");
-    }
-  }, [isHomePage]);
+    const observer = new IntersectionObserver((entries) => {
+      const visibleSection = entries.find((entry) => entry.isIntersecting);
+      if (visibleSection) {
+        setActiveHash(`#${visibleSection.target.id}`);
+      }
+    });
+
+    const sectionIds = menuItems.map((item) => item.href.replace("#", ""));
+    const elements = sectionIds
+      .map((id) => document.getElementById(id))
+      .filter(Boolean) as HTMLElement[];
+
+    elements.forEach((el) => observer.observe(el));
+
+    return () => {
+      elements.forEach((el) => observer.unobserve(el));
+    };
+  }, [pathname]);
   return (
     <nav className={style.menuBlock}>
       {menuItems.map((item, index) => {
         // const isActive = isHomePage && activeHash === "#" + item.split(" ")[0];
         console.log(activeHash);
-        const isActive = isHomePage && activeHash === item.href;
+        const isActive = activeHash === item.href;
         return (
           <Link
-            href={`${item.href}`}
+            href={item.href}
             key={index}
             className={`${isActive ? style.activeLink : style.passiveLink}`}
           >

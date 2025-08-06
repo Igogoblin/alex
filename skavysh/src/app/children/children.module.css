@@ -30,12 +30,7 @@
   font-weight: 500;
   line-height: 52px;
 }
-@media screen and (max-width: 750px) {
-  .children__head_title {
-    font-size: 28px;
-    line-height: 36px;
-  }
-}
+
 /* children about ------------------------------------------------ */
 .children__about {
   display: flex;
@@ -45,6 +40,8 @@
   display: flex;
 }
 .about_title {
+  max-width: 380px;
+  width: 100%;
   color: var(--primary-50);
   font-size: 20px;
   font-weight: 500;
@@ -70,3 +67,29 @@
   margin-top: 16px;
 }
 /* children figure ------------------------------*/
+
+/* children resume ------------------------------ */
+@media screen and (max-width: 1000px) {
+  .about_title {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .subtitle_text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .subtitle_description {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .about_container {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .children__head_title {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
