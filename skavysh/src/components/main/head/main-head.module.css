@@ -7,12 +7,12 @@
   font-weight: 500;
   font-size: 40px;
   color: var(--color-neutral-80);
-  display: inline-flex;
+  /* display: inline-flex; */
   align-items: center;
   gap: 12px;
   flex-wrap: wrap;
   line-height: 1.2;
-  word-break: break-word;
+  /* word-break: break-word; */
 }
 
 .title :global(img),
@@ -20,8 +20,11 @@
   display: inline-block;
   vertical-align: middle;
 }
+.avatar {
+  margin: 0 12px;
+}
 .text {
-  width: 816px;
+  max-width: 816px;
   /* color: #4e5052; */
   color: var(--color-neutral-60);
   font-size: 16px;
@@ -30,4 +33,7 @@
   line-height: 24px;
   word-wrap: break-word;
   margin-top: 32px;
+}
+.link {
+  display: inline-flex;
 }

@@ -6,7 +6,7 @@ import style from "./header.module.css";
 const Header = () => {
   return (
     <header className={style.header}>
-      <div className="flex">
+      <div className={style.menu_cv}>
         <MenuBlock />
         <CVBlock />
       </div>

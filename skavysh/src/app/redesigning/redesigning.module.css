@@ -11,3 +11,9 @@
   flex-direction: column;
   gap: 16px;
 }
+@media screen and (max-width: 1200px) {
+  .redesigning {
+    flex-direction: column-reverse;
+    gap: 24px;
+  }
+}

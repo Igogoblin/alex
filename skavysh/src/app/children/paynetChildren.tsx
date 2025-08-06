@@ -5,7 +5,7 @@ import ButtonLink from "@/components/button/button-link";
 
 export default function PaynetChildren() {
   return (
-    <section className={style.children}>
+    <section className={style.children} id="product">
       <div>
         <h2 className={style.title}>
           Paynet social project for children with disabilities

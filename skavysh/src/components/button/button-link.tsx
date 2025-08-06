@@ -8,6 +8,7 @@ interface IbuttonLinkProps {
   link: string;
   size: number;
   isUp?: boolean;
+  className?: string;
 }
 
 export default function ButtonLink({
@@ -15,9 +16,10 @@ export default function ButtonLink({
   link,
   size,
   isUp = false,
+  className = "",
 }: IbuttonLinkProps) {
   return (
-    <Link href={link} passHref className={style.link}>
+    <Link href={link} passHref className={`${style.link} ${className}`}>
       {text}
       <Image
         src={isUp ? ArrowUp : ArrowIcon}

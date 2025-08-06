@@ -8,3 +8,8 @@
 .avoDark h2 {
   margin-bottom: 24px;
 }
+@media screen and (max-width: 1200px) {
+  .avoDark {
+    flex-direction: column;
+  }
+}

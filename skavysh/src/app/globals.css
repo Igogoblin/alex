@@ -1,10 +1,5 @@
 @import "tailwindcss";
 
-:root {
-  /* --background: #ffffff;
-  --foreground: #171717; */
-}
-
 @theme inline {
   /* --color-background: var(--background);
   --color-foreground: var(--foreground); */
@@ -17,7 +12,10 @@
     --foreground: #ededed;
   } */
 }
-
+html,
+main {
+  scroll-behavior: smooth;
+}
 body {
   max-width: 1440px;
   margin: 0 auto;
@@ -37,4 +35,22 @@ h2 {
   font-family: "Noto Sans";
   font-weight: 500;
   line-height: 28px;
+}
+.footer__text {
+  color: var(--color-neutral-80);
+  font-size: 16px;
+  font-family: "Noto Sans";
+  font-weight: 500;
+  line-height: 24px;
+  word-wrap: break-word;
+}
+.footer__text_span {
+  color: var(--color-neutral-40);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  word-wrap: break-word;
+  position: relative;
+  top: -6px;
+  margin-left: 4px;
 }
