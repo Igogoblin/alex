@@ -37,3 +37,9 @@
 .link {
   display: inline-flex;
 }
+@media screen and (max-width: 500px) {
+  .title {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
