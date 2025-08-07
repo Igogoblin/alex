@@ -1,5 +1,4 @@
 import Container from "@/components/container/container";
-// import Line from "@/components/line/Line";
 import MainHead from "@/components/main/head/main-head";
 import PaynetChildren from "./children/paynetChildren";
 import AvoDark from "./avodark/avoDark";

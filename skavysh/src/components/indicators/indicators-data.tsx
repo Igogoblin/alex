@@ -1,6 +1,4 @@
 import style from "./indicators-data.module.css";
-import Image from "next/image";
-import greenTriangle from "../../../public/triangleGreenChildren.svg";
 
 type IndicatorsDataProps = {
   results: {
@@ -19,12 +17,18 @@ export default function IndicatorsData(props: IndicatorsDataProps) {
             <div className={style.result__title}>
               {item.title}
               {item.isUp && (
-                <Image
-                  src={greenTriangle}
-                  alt="green triangle"
-                  width={20}
-                  height={20}
-                />
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.66667 5.69458L18 14L1.33333 14L9.66667 5.69458Z"
+                    fill="#08723D"
+                  />
+                </svg>
               )}
             </div>
             <p className={style.result__description}>{item.subtitle}</p>
