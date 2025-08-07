@@ -1,7 +1,4 @@
 import Link from "next/link";
-import ArrowIcon from "../../../public/arrowUpRight.svg";
-import ArrowUp from "../../../public/arrowUp.svg";
-import Image from "next/image";
 import style from "./button-link.module.css";
 interface IbuttonLinkProps {
   text: string;
@@ -21,12 +18,53 @@ export default function ButtonLink({
   return (
     <Link href={link} passHref className={`${style.link} ${className}`}>
       {text}
-      <Image
-        src={isUp ? ArrowUp : ArrowIcon}
-        alt="arrow"
-        width={size}
-        height={size}
-      />
+      {isUp ? (
+        <svg
+          width={size}
+          height={size}
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M12 5.7597C12 11.227 12 13.5327 12 19"
+            stroke="#323232"
+            stroke-width="1.5"
+            stroke-linecap="square"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M6.99805 10L11.999 4.99902L17 10"
+            stroke="#323232"
+            stroke-width="1.5"
+            stroke-linecap="square"
+            stroke-linejoin="bevel"
+          />
+        </svg>
+      ) : (
+        <svg
+          width={size}
+          height={size}
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M16.3931 7.60738L7.02539 16.9751"
+            stroke="#2B2D31"
+            stroke-width="1.5"
+            stroke-linecap="square"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M9.97461 7.0249L16.9246 7.0739L16.9746 14.0249"
+            stroke="#323232"
+            stroke-width="1.5"
+            stroke-linecap="square"
+            stroke-linejoin="bevel"
+          />
+        </svg>
+      )}
     </Link>
   );
 }

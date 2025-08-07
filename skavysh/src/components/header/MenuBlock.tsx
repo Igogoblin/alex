@@ -2,8 +2,6 @@
 import { usePathname } from "next/navigation";
 import style from "./header.module.css";
 import Link from "next/link";
-import arrowLeft from "../../../public/arrowLeft.svg";
-import Image from "next/image";
 import { useEffect, useMemo, useState } from "react";
 const MenuBlock = () => {
   const pathname = usePathname();
@@ -45,7 +43,6 @@ const MenuBlock = () => {
   return (
     <nav className={style.menuBlock}>
       {menuItems.map((item, index) => {
-        // const isActive = isHomePage && activeHash === "#" + item.split(" ")[0];
         console.log(activeHash);
         const isActive = activeHash === item.href;
         return (
@@ -60,13 +57,28 @@ const MenuBlock = () => {
       })}
       {!isHomePage && (
         <Link href={"/"} className={style.returning}>
-          <Image
-            src={arrowLeft}
-            alt="arrow"
-            width={24}
-            height={24}
-            unoptimized
-          />
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M5.83398 12H19"
+              stroke="#2B2D31"
+              stroke-width="1.5"
+              stroke-linecap="square"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M10 7L5 12L10 17"
+              stroke="#2B2D31"
+              stroke-width="1.5"
+              stroke-linecap="square"
+              stroke-linejoin="bevel"
+            />
+          </svg>
           back
         </Link>
       )}

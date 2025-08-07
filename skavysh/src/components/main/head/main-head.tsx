@@ -1,9 +1,7 @@
 import Image from "next/image";
 import avatar from "../../../../public/avatar.jpg";
 import style from "./main-head.module.css";
-import arrow from "../../../../public/arrowUpRight.svg";
 import Link from "next/link";
-// import ButtonLink from "@/components/button/button-link";
 
 const dataMainHead = {
   title1: "I’m Aleksandra Skavysh ",
@@ -14,9 +12,6 @@ export default function MainHead() {
   return (
     <section className={style.mainHead}>
       <h1 className={style.title}>
-        {/* {dataMainHead.title1}
-        <Image src={avatar} alt="avatar" width={54} height={54} unoptimized />
-        {dataMainHead.title2} */}
         I’m Aleksandra Skavysh
         <Image
           src={avatar}
@@ -33,7 +28,28 @@ export default function MainHead() {
           className={style.link}
         >
           Paynet
-          <Image src={arrow} alt="arrow" width={52} height={52} unoptimized />
+          <svg
+            width="52"
+            height="52"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M16.3931 7.60738L7.02539 16.9751"
+              stroke="#2B2D31"
+              stroke-width="1.5"
+              stroke-linecap="square"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M9.97461 7.0249L16.9246 7.0739L16.9746 14.0249"
+              stroke="#323232"
+              stroke-width="1.5"
+              stroke-linecap="square"
+              stroke-linejoin="bevel"
+            />
+          </svg>
         </Link>
       </h1>
       <p className={style.text}>{dataMainHead.text}</p>

@@ -9,9 +9,9 @@ export default function ChildrenResume() {
         <div className={style.about_title}>{ChildrenData.resume.title}</div>
         <div className={style.children__resume_subtitle}>
           <p className={style.subtitle_text}>{ChildrenData.resume.subtitle}</p>
-          <p className={style.subtitle_description}>
+          {/* <p className={style.subtitle_description}>
             {ChildrenData.resume.factors}
-          </p>
+          </p> */}
           <EnumBlock
             title={ChildrenData.resume.factors}
             items={ChildrenData.resume.factorsList}
