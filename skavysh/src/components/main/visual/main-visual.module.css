@@ -13,6 +13,7 @@
   margin-bottom: 44px;
 }
 .visual_block {
+  height: fit-content;
   display: flex;
   justify-content: start;
   align-items: flex-start;
@@ -86,8 +87,16 @@
   }
 }
 @media screen and (max-width: 800px) {
-  .item_cyberpunk img {
+  .visual_block {
+    align-items: end;
+    /* justify-content: end; */
     /* width: auto; */
     /* height: 100%; */
+  }
+  .visual_item,
+  .item_behance,
+  .item_cyberpunk {
+    height: auto;
+    width: auto;
   }
 }

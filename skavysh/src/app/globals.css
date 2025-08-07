@@ -15,6 +15,7 @@
 html,
 main {
   scroll-behavior: smooth;
+  z-index: 0;
 }
 body {
   max-width: 1440px;
