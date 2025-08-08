@@ -28,8 +28,9 @@ export default function ChildrenAbout() {
           <Image
             src={childrenAbout}
             alt="children about"
-            width={730}
+            width={760}
             height={546}
+            className={style.children__about_image}
           />
         </div>
       </div>

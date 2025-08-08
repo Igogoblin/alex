@@ -12,10 +12,8 @@
     --foreground: #ededed;
   } */
 }
-html,
-main {
+html {
   scroll-behavior: smooth;
-  z-index: 0;
 }
 body {
   max-width: 1440px;
@@ -28,8 +26,8 @@ body {
   flex-direction: column;
   justify-content: space-between;
   position: relative;
+  scroll-behavior: smooth;
 }
-
 h2 {
   color: var(--color-neutral-800);
   font-size: 20px;

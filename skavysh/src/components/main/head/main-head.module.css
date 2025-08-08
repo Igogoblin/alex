@@ -37,6 +37,14 @@
 .link {
   display: inline-flex;
 }
+.link:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: var(--color-neutral-40);
+}
+.link:hover svg path {
+  stroke: var(--color-neutral-40);
+}
 @media screen and (max-width: 500px) {
   .title {
     font-size: 32px;

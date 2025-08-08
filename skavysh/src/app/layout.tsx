@@ -25,7 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${noto.variable} font-sans`}>
+      <body className={`${noto.variable} font-sans`} id="body">
         <Container>
           <Header />
         </Container>

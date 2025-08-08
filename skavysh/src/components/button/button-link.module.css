@@ -2,3 +2,11 @@
   display: flex;
   align-items: center;
 }
+.link:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: var(--color-neutral-40);
+}
+.link:hover svg path {
+  stroke: var(--color-neutral-40);
+}

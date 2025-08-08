@@ -81,7 +81,17 @@
   line-height: 32px;
   word-wrap: break-word;
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 950px) {
+  .contact_item__cv div:first-child {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .contact_item__cv div:first-child svg {
+    width: 28px;
+    height: 28px;
+  }
+}
+@media screen and (max-width: 810px) {
   .contact_items {
     flex-direction: column;
     gap: 18px;
@@ -107,4 +117,10 @@
   }
 }
 @media screen and (max-width: 500px) {
+  .contact_item {
+    padding: 16px;
+  }
+  /* .contact_item {
+    height: 162px;
+  } */
 }

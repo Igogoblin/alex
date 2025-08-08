@@ -12,17 +12,28 @@
   margin-bottom: 44px;
 }
 .visual_block {
-  height: fit-content;
+  /* height: fit-content; */
   display: flex;
-  justify-content: start;
-  align-items: flex-start;
+  /* justify-content: start;
+  align-items: flex-start; */
   flex-wrap: wrap;
   gap: 24px;
 }
 .visual_item {
-  height: 400px;
+  /* height: 400px;
+  border-radius: 24px;
+  transition: all 0.3s ease; */
+  flex: 1 1 300px; /* растягивается, но не меньше 300px */
+  max-width: calc(50% - 12px); /* чтобы в ряду было 2 элемента с учётом gap */
+  height: auto;
   border-radius: 24px;
   transition: all 0.3s ease;
+}
+.visual_item img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
 }
 .item_cyberpunk {
   max-width: 696px;
@@ -59,7 +70,9 @@
   .visual_item,
   .item_behance,
   .item_cyberpunk {
-    height: auto;
-    width: auto;
+    /* height: auto;
+    width: auto; */
+    max-width: 100%;
+    flex: 1 1 100%;
   }
 }

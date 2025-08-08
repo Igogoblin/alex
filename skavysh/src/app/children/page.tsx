@@ -20,7 +20,7 @@ export default function Children() {
       <Image
         src={childrenCentral}
         alt="children central"
-        width={1340}
+        width={1390}
         height={540}
         style={{ margin: "60px 0" }}
       />
@@ -30,7 +30,9 @@ export default function Children() {
       <Container>
         <ChildrenResume />
       </Container>
-      <NextProject link={"/avodark"} image={avodark} />
+      <Container>
+        <NextProject link={"/avodark"} image={avodark} />
+      </Container>
     </main>
   );
 }

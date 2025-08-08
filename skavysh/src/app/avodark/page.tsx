@@ -14,7 +14,9 @@ export default function Avodark() {
         </h1>
         <Image src={avodark} alt="avodark" width={1140} height={500} />
       </Container>
-      <NextProject link={"/travel"} image={travel} />
+      <Container>
+        <NextProject link={"/travel"} image={travel} />
+      </Container>
     </main>
   );
 }
