@@ -8,6 +8,14 @@
 .avoDark h2 {
   margin-bottom: 24px;
 }
+.title {
+  max-width: 700px;
+  color: var(--color-neutral-80);
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 48px;
+  margin: 60px 0 44px;
+}
 @media screen and (max-width: 1200px) {
   .avoDark {
     flex-direction: column;
