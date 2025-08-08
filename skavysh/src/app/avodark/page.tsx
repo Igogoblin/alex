@@ -1,3 +1,20 @@
+import Container from "@/components/container/container";
+import avodark from "../../../public/avoDark/avoDark.jpg";
+import Image from "next/image";
+import style from "./avoDark.module.css";
+import NextProject from "@/components/next-project/next-project";
+import travel from "../../../public/travel/travelMain.jpg";
+
 export default function Avodark() {
-  return <h1>Avodark</h1>;
+  return (
+    <main>
+      <Container>
+        <h1 className={style.title}>
+          Dark mode & tokenisation. Design system updates
+        </h1>
+        <Image src={avodark} alt="avodark" width={1140} height={500} />
+      </Container>
+      <NextProject link={"/travel"} image={travel} />
+    </main>
+  );
 }
