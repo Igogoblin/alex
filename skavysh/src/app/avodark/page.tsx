@@ -4,6 +4,7 @@ import Image from "next/image";
 import style from "./avoDark.module.css";
 import NextProject from "@/components/next-project/next-project";
 import travel from "../../../public/travel/travelMain.jpg";
+import AvodarkAbout from "./avodark-about/avodarkAbout";
 
 export default function Avodark() {
   return (
@@ -14,6 +15,10 @@ export default function Avodark() {
         </h1>
         <Image src={avodark} alt="avodark" width={1140} height={500} />
       </Container>
+      <Container>
+        <AvodarkAbout />
+      </Container>
+
       <Container>
         <NextProject link={"/travel"} image={travel} />
       </Container>
