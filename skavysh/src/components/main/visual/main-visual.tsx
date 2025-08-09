@@ -35,11 +35,14 @@ export default function MainVisual() {
         >
           <Image src={cocktailMain} alt="cocktail" width={420} height={400} />
         </Link>
-        <Link href={"/posters"} className={style.visual_item}>
+        <Link
+          href={"/posters"}
+          className={`${style.visual_item} ${style.item_cyberpunk}`}
+        >
           <Image
             src={posters}
             alt="posters"
-            width={706}
+            width={696}
             height={400}
             unoptimized
           />
