@@ -1,5 +1,3 @@
-import { title } from "process";
-
 export const AVODARK = {
   about: {
     title: "about the project",
@@ -13,7 +11,7 @@ export const AVODARK = {
     problemList: [
       "outdated and overloaded component library",
       "components reused inconsistently without rules and documentation",
-      "missing logic in light/dark theme behaviour",
+      "missing logic in light/dark theme behavior",
       "poor scalability for color tokens",
       "lack of design-to-dev alignment",
     ],
