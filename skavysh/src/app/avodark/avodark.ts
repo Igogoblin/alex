@@ -63,7 +63,9 @@ export const AVODARK = {
     subtitle:
       "The color palette was limited and couldn't meet the growing UI demands",
     description:
-      "It also lacked tonal harmony, which affected visual perception and made design work harder. I analyzed the layouts and created an extended palette designed to scale with the product and remain effective long-term.",
+      "It also lacked tonal harmony, which affected visual perception and made design work harder.",
+    description1:
+      "I analyzed the layouts and created an extended palette designed to scale with the product and remain effective long-term.",
     colors: "",
     colorList: [
       "updated core and semantic colors with revised color scales",
@@ -77,13 +79,13 @@ export const AVODARK = {
       "Legacy tokens combined usage context and visual priority in their names, leading to confusion and inconsistent application. Names often didn’t match how tokens were actually used.",
     description:
       "I restructured the system using semantic grouping, making it easier to scale and maintain. This allowed us to switch to a new color palette and implement dark mode within 2 months — with minimal design refactoring",
-    tokens: "",
-    tokensList: [],
+    tokens: "global tokens",
     description1:
       "I started by creating global color tokens to define all fundamental values",
   },
   semantic: "semantic tokens",
-  semanticList: [],
+  semanticList:
+    "I started by creating global color tokens to define all fundamental values",
   description2:
     "The semantic token is to systemize the design language for a specific semantic group of components.",
 };

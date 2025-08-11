@@ -22,7 +22,12 @@
   font-weight: 500;
   line-height: 28px;
 }
-
+.section-description--title {
+  color: var(--color-neutral-80);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
 .section-description {
   color: var(--color-neutral-60);
   font-size: 16px;

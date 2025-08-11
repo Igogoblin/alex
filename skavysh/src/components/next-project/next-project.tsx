@@ -17,14 +17,7 @@ export default function NextProject({
     <Link href={link} className={style.btnNext}>
       {isBack ? (
         <>
-          <Image
-            src={image}
-            alt="arrow"
-            width={137}
-            height={60}
-            unoptimized
-            style={{ transform: "rotate(180deg)" }}
-          />
+          <Image src={image} alt="arrow" width={137} height={60} unoptimized />
           previous project
         </>
       ) : (
