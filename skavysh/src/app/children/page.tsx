@@ -30,9 +30,8 @@ export default function Children() {
       <Container>
         <ChildrenResume />
       </Container>
-      <Container>
-        <NextProject link={"/avodark"} image={avodark} />
-      </Container>
+
+      <NextProject link={"/avodark"} image={avodark} />
     </main>
   );
 }

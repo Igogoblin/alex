@@ -53,3 +53,8 @@ h2 {
   top: -6px;
   margin-left: 4px;
 }
+.footer__text:hover span:first-child {
+  cursor: pointer;
+  text-decoration: underline;
+  color: var(--color-neutral-40);
+}

@@ -88,4 +88,52 @@ export const AVODARK = {
     "I started by creating global color tokens to define all fundamental values",
   description2:
     "The semantic token is to systemize the design language for a specific semantic group of components.",
+  working: [
+    {
+      task: "audit & analysis",
+      subtasks: [
+        "review the current state of the UI kit & existing design mockups",
+        "analyze the component library",
+        "audit the token system",
+        "team discussion",
+      ],
+    },
+    {
+      task: "library cleanup",
+      subtasks: [
+        "rebuild components: add missing components, optimize existing ones, clean snowflakes",
+        "adapt UI in Mockups",
+        "prepare the documentation for updated components",
+        "align with the development team",
+      ],
+    },
+    {
+      task: "color palette refactoring",
+      subtasks: [
+        "examine the color palette",
+        "add missing colors and and optimize existing ones",
+        "adapt components based on the new color palette",
+        "define token levels & optimize hierarchy and eliminate redundant tokens",
+        "align with the development team",
+      ],
+    },
+    {
+      task: "token system redesign",
+      subtasks: [
+        "decide whether the dark theme will be completely independent or based on modifications of the light theme",
+        "set up color tokens for dark mode",
+        "test and refine core dark theme scenarios",
+        "align with the development team",
+      ],
+    },
+    {
+      task: "dark theme implementation",
+      subtasks: [
+        "design and test dark theme versions of the mockups based on the tokens",
+        "align with the development team",
+        "test and refine core dark theme scenarios",
+        "testing and final adjustments",
+      ],
+    },
+  ],
 };
