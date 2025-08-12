@@ -26,10 +26,16 @@
   align-items: center;
   margin: 60px 0;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1050px) {
   .btnNext,
   .btnPrev {
     font-size: 20px;
     line-height: 24px;
+  }
+}
+@media screen and (max-width: 920px) {
+  .divider {
+    flex-direction: column;
+    gap: 45px;
   }
 }

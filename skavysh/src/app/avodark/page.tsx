@@ -25,7 +25,13 @@ export default function Avodark() {
         <h1 className={style.title} id="works">
           Dark mode & tokenisation. Design system updates
         </h1>
-        <Image src={avodark} alt="avodark" width={1140} height={500} />
+        <Image
+          src={avodark}
+          alt="avodark"
+          width={1140}
+          height={500}
+          style={{ margin: "60px 0" }}
+        />
       </Container>
       <Container>
         <AvodarkAbout />

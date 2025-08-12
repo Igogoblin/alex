@@ -11,7 +11,7 @@ export default function AvodarkAbout() {
         <div className={common["section-title"]}>{AVODARK.about.title}</div>
         <div>
           <p className={common["section-subtitle"]}>{AVODARK.about.subtitle}</p>
-          <div className="flex gap-[24px] my-[16px]">
+          <div className="flex gap-[12px] my-[16px] text-[28px] flex-col md:flex-row md:gap-[24px]">
             <ButtonLink text={"AppStore"} link="#" size={44}></ButtonLink>
             <ButtonLink text={"GooglePlay"} link="#" size={44}></ButtonLink>
           </div>
