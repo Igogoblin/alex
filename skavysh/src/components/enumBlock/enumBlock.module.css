@@ -1,7 +1,7 @@
 .enum__block {
   margin: 32px 0;
 }
-.title {
+.enum__title {
   color: var(--color-neutral-80);
   font-size: 16px;
   font-weight: 600;
@@ -20,7 +20,7 @@
   list-style-type: disc;
 }
 @media screen and (max-width: 1000px) {
-  .title {
+  .enum__title {
     font-size: 14px;
     line-height: 20px;
   }

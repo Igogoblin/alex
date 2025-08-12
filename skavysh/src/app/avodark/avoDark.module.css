@@ -69,6 +69,9 @@
   border: 1px solid var(--color-white);
   padding: 10px;
 }
+.library {
+  margin-top: 44px;
+}
 @media screen and (max-width: 1300px) {
   .avoDark {
     flex-direction: column;
