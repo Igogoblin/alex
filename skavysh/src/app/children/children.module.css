@@ -1,4 +1,4 @@
-.children {
+/* .children {
   display: flex;
   gap: 24px;
   align-items: end;
@@ -9,7 +9,7 @@
   font-family: "Noto Sans";
   font-weight: 500;
   line-height: 28px;
-  /* word-wrap: break-word; */
+
   margin-bottom: 24px;
 }
 @media screen and (max-width: 1200px) {
@@ -17,7 +17,7 @@
     flex-direction: column-reverse;
   }
 }
-/* children head -------------------------------------------------- */
+children head --------------------------------------------------
 .children__head {
   display: flex;
   flex-direction: column;
@@ -31,7 +31,7 @@
   line-height: 52px;
 }
 
-/* children about ------------------------------------------------ */
+children about ------------------------------------------------
 .children__about {
   display: flex;
   flex-direction: column;
@@ -66,9 +66,12 @@
   line-height: 24px;
   margin-top: 16px;
 }
-/* children figure ------------------------------*/
+.children__about_image {
+  margin: 44px 0;
+}
+children figure ------------------------------
 
-/* children resume ------------------------------ */
+children resume ------------------------------
 @media screen and (max-width: 1000px) {
   .about_title {
     font-size: 16px;
@@ -92,4 +95,44 @@
     font-size: 28px;
     line-height: 36px;
   }
+} */
+.children {
+  display: flex;
+  gap: 24px;
+  align-items: end;
 }
+
+@media screen and (max-width: 1200px) {
+  .children {
+    flex-direction: column-reverse;
+  }
+}
+
+/* children head */
+.children__head {
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+  margin: 60px 0;
+}
+
+/* children about */
+.children__about {
+  display: flex;
+  flex-direction: column;
+}
+
+/* .about_container {
+  display: flex;
+} */
+
+.children__about_image {
+  margin: 44px 0;
+}
+
+/* @media screen and (max-width: 750px) {
+  .about_container {
+    flex-direction: column;
+    gap: 24px;
+  }
+} */

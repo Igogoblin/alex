@@ -25,7 +25,7 @@ export default function MainContact() {
           </ContactItem>
           <ContactItem>
             <p className={style.text}>Learn more</p>
-            <CVBlock />
+            <CVBlock isIcon={true} />
           </ContactItem>
         </div>
       </div>

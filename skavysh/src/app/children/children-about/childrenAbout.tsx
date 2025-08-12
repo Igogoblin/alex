@@ -1,16 +1,73 @@
+// import style from "../children.module.css";
+// import { ChildrenData } from "../children-data";
+// import EnumBlock from "@/components/enumBlock/enumBlock";
+// import childrenAbout from "../../../../public/children/childrenAbout.jpg";
+// import Image from "next/image";
+// export default function ChildrenAbout() {
+//   return (
+//     <section className={style.children__about} id="about">
+//       <div className={style.about_container}>
+//         <div className={style.about_title}>{ChildrenData.about.title}</div>
+//         <div className={style.about_subtitle}>
+//           <p className={style.subtitle_text}>{ChildrenData.about.subtitle}</p>
+//           <p className={style.subtitle_description}>
+//             {ChildrenData.about.description}
+//           </p>
+//           <EnumBlock
+//             title={ChildrenData.about.role}
+//             items={ChildrenData.about.roles}
+//           />
+//           <EnumBlock
+//             title={ChildrenData.about.goals}
+//             items={ChildrenData.about.goalsList}
+//           />
+//           <EnumBlock
+//             title={ChildrenData.about.team}
+//             items={ChildrenData.about.teamList}
+//           />
+//           <Image
+//             src={childrenAbout}
+//             alt="children about"
+//             width={760}
+//             height={546}
+//             className={style.children__about_image}
+//           />
+//         </div>
+//       </div>
+//       <div className={style.about_container}>
+//         <div className={style.about_title}>{ChildrenData.concept.title}</div>
+//         <div className={style.about_subtitle}>
+//           <p className={style.subtitle_text}>{ChildrenData.concept.subtitle}</p>
+//           <p className={style.subtitle_description}>
+//             {ChildrenData.concept.text1}
+//           </p>
+//           <p className={style.subtitle_description}>
+//             {ChildrenData.concept.text2}
+//           </p>
+//         </div>
+//       </div>
+//     </section>
+//   );
+// }
+import common from "@/styles/common.module.css";
 import style from "../children.module.css";
 import { ChildrenData } from "../children-data";
 import EnumBlock from "@/components/enumBlock/enumBlock";
 import childrenAbout from "../../../../public/children/childrenAbout.jpg";
 import Image from "next/image";
+
 export default function ChildrenAbout() {
   return (
     <section className={style.children__about} id="about">
-      <div className={style.about_container}>
-        <div className={style.about_title}>{ChildrenData.about.title}</div>
-        <div className={style.about_subtitle}>
-          <p className={style.subtitle_text}>{ChildrenData.about.subtitle}</p>
-          <p className={style.subtitle_description}>
+      <div className={common["section-container"]}>
+        <div className={common["section-title"]}>
+          {ChildrenData.about.title}
+        </div>
+        <div>
+          <p className={common["section-subtitle"]}>
+            {ChildrenData.about.subtitle}
+          </p>
+          <p className={common["section-description"]}>
             {ChildrenData.about.description}
           </p>
           <EnumBlock
@@ -28,19 +85,25 @@ export default function ChildrenAbout() {
           <Image
             src={childrenAbout}
             alt="children about"
-            width={730}
+            width={760}
             height={546}
+            className={style.children__about_image}
           />
         </div>
       </div>
-      <div className={style.about_container}>
-        <div className={style.about_title}>{ChildrenData.concept.title}</div>
-        <div className={style.about_subtitle}>
-          <p className={style.subtitle_text}>{ChildrenData.concept.subtitle}</p>
-          <p className={style.subtitle_description}>
+
+      <div className={common["section-container"]}>
+        <div className={common["section-title"]}>
+          {ChildrenData.concept.title}
+        </div>
+        <div>
+          <p className={common["section-subtitle"]}>
+            {ChildrenData.concept.subtitle}
+          </p>
+          <p className={common["section-description"]}>
             {ChildrenData.concept.text1}
           </p>
-          <p className={style.subtitle_description}>
+          <p className={common["section-description"]}>
             {ChildrenData.concept.text2}
           </p>
         </div>
