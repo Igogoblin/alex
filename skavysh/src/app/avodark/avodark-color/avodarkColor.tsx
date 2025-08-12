@@ -1,5 +1,5 @@
 import common from "@/styles/common.module.css";
-import { AVODARK } from "../avodark";
+import { AVODARK } from "../avodarkData";
 import EnumBlock from "@/components/enumBlock/enumBlock";
 export default function AvodarkColor() {
   return (

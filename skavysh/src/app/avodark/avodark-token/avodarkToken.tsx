@@ -1,5 +1,5 @@
 import common from "@/styles/common.module.css";
-import { AVODARK } from "../avodark";
+import { AVODARK } from "../avodarkData";
 import Image from "next/image";
 import token from "../../../../public/avoDark/avodarkToken.png";
 export default function AvodarkToken() {

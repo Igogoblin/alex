@@ -1,4 +1,4 @@
-import { AVODARK } from "../avodark";
+import { AVODARK } from "../avodarkData";
 import style from "../avoDark.module.css";
 export default function AvodarkWorking() {
   return (

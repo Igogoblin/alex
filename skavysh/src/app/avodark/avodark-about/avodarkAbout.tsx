@@ -1,6 +1,6 @@
 import common from "@/styles/common.module.css";
 // import style from "../avoDark.module.css";
-import { AVODARK } from "../avodark";
+import { AVODARK } from "../avodarkData";
 import ButtonLink from "@/components/button/button-link";
 import EnumBlock from "@/components/enumBlock/enumBlock";
 

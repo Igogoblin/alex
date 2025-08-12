@@ -1,5 +1,5 @@
 import common from "@/styles/common.module.css";
-import { AVODARK } from "../avodark";
+import { AVODARK } from "../avodarkData";
 import IndicatorsData from "@/components/indicators/indicators-data";
 
 export default function AvodarkLibrary() {
