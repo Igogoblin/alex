@@ -7,7 +7,7 @@ interface EnumBlockProps {
 export default function EnumBlock({ title, items }: EnumBlockProps) {
   return (
     <div className={style.enum__block}>
-      <h3 className={style.title}>{title}</h3>
+      <h3 className={style.enum__title}>{title}</h3>
       <ul className={style.list}>
         {items.map((item, index) => (
           <li key={index} className={style.item}>

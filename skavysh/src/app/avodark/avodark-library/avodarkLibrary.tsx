@@ -1,10 +1,10 @@
 import common from "@/styles/common.module.css";
 import { AVODARK } from "../avodarkData";
 import IndicatorsData from "@/components/indicators/indicators-data";
-
+import style from "../avoDark.module.css";
 export default function AvodarkLibrary() {
   return (
-    <section>
+    <section className={style.library}>
       <div className={common["section-container"]}>
         <div className={common["section-title"]}>{AVODARK.library.title}</div>
         <div>

@@ -101,6 +101,9 @@ children resume ------------------------------
   gap: 24px;
   align-items: end;
 }
+.title {
+  margin-bottom: 24px;
+}
 
 @media screen and (max-width: 1200px) {
   .children {
