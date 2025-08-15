@@ -43,7 +43,6 @@ const MenuBlock = () => {
   return (
     <nav className={style.menuBlock}>
       {menuItems.map((item, index) => {
-        console.log(activeHash);
         const isActive = activeHash === item.href;
         return (
           <Link
