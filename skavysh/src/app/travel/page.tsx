@@ -14,14 +14,14 @@ import { TravelComponent } from "./sections/travel-component";
 import breadcrumbsImage from "../../../public/travel/travelBreadcrumbs.png";
 import { TravelDeveloper } from "./sections/travel-developer";
 import { TravelResume } from "./sections/travel-resume";
-// import { EmblaOptionsType } from "embla-carousel";
-// import { TRAVEL_IMAGES_SLIDER } from "./travelData";
-import useEmblaCarousel from "embla-carousel-react";
-// import EmblaCarousel from "../../components/carousel/emblaCarousel";
+import { EmblaOptionsType } from "embla-carousel";
+import { TRAVEL_IMAGES_SLIDER } from "./travelData";
+// import useEmblaCarousel from "embla-carousel-react";
+import EmblaCarousel from "../../components/carousel/emblaCarousel";
 
-// const OPTIONS: EmblaOptionsType = {
-//   loop: true,
-// };
+const OPTIONS: EmblaOptionsType = {
+  loop: true,
+};
 
 export default function Travel() {
   // const [emblaRef] = useEmblaCarousel(options);
@@ -63,7 +63,7 @@ export default function Travel() {
       <Container>
         <TravelDeveloper />
       </Container>{" "}
-      {/* <EmblaCarousel slides={TRAVEL_IMAGES_SLIDER.length} options={OPTIONS} /> */}
+      <EmblaCarousel slides={TRAVEL_IMAGES_SLIDER} options={OPTIONS} />
       <Container>
         <TravelResume />
       </Container>

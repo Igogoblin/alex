@@ -51,7 +51,19 @@
   line-height: 18px;
   font-weight: 400;
 }
+.email_copy {
+  cursor: pointer;
+  font-size: 28px;
+  line-height: 32px;
+  font-weight: 500;
+}
+.email_copy:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: var(--color-neutral-40);
+}
 .copy {
+  position: absolute;
   width: fit-content;
   display: none;
   color: var(--color-neutral-20);
@@ -67,12 +79,12 @@
   transition: all 0.3s ease;
   margin: auto 0 26px 0;
 }
-.bubbleEmail:hover .copy {
+/* .bubbleEmail:hover .copy {
   display: block;
 }
 .bubbleEmail:hover p:last-child {
   color: var(--color-neutral-40);
-}
+} */
 .forStyle {
   color: var(--color-neutral-80);
   font-size: 28px;
@@ -81,7 +93,12 @@
   line-height: 32px;
   word-wrap: break-word;
 }
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1060px) {
+  .contact_item div p,
+  .cvBlock__item {
+    font-size: 20px;
+    line-height: 24px;
+  }
   .contact_item__cv div:first-child {
     font-size: 20px;
     line-height: 24px;
@@ -123,4 +140,11 @@
   /* .contact_item {
     height: 162px;
   } */
+}
+@media screen and (max-width: 450px) {
+  .email_copy,
+  .contact_item div p {
+    font-size: 14px;
+    line-height: 20px;
+  }
 }

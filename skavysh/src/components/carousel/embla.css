@@ -1,68 +1,5 @@
-@import "tailwindcss";
-
-@theme inline {
-  /* --color-background: var(--background);
-  --color-foreground: var(--foreground); */
-  --font-sans: var(--font-noto-sans);
-}
-
-@media (prefers-color-scheme: dark) {
-  /* :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  } */
-}
-html {
-  scroll-behavior: smooth;
-}
-body {
-  max-width: 1440px;
-  margin: 0 auto;
-  background-color: #fafbfb;
-  color: var(--foreground);
-  font-family: var(--font-noto-sans), sans-serif;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  position: relative;
-  scroll-behavior: smooth;
-}
-h2 {
-  color: var(--color-neutral-800);
-  font-size: 20px;
-  font-family: "Noto Sans";
-  font-weight: 500;
-  line-height: 28px;
-}
-.footer__text {
-  color: var(--color-neutral-80);
-  font-size: 16px;
-  font-family: "Noto Sans";
-  font-weight: 500;
-  line-height: 24px;
-  word-wrap: break-word;
-}
-.footer__text_span {
-  color: var(--color-neutral-40);
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 18px;
-  word-wrap: break-word;
-  position: relative;
-  top: -6px;
-  margin-left: 4px;
-}
-.footer__text:hover span:first-child {
-  cursor: pointer;
-  text-decoration: underline;
-  color: var(--color-neutral-40);
-}
-
-/* embla slider ----------------------- */
 .embla {
-  /* max-width: 48rem; */
-  width: 100%;
+  max-width: 48rem;
   margin: auto;
   --slide-height: 19rem;
   --slide-spacing: 1rem;
@@ -79,8 +16,7 @@ h2 {
 .embla__slide {
   transform: translate3d(0, 0, 0);
   flex: 0 0 var(--slide-size);
-  /* min-width: 0; */
-  max-width: 424px;
+  min-width: 0;
   padding-left: var(--slide-spacing);
 }
 .embla__slide__number {

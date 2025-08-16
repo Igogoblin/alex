@@ -1,3 +1,4 @@
+"use client";
 import React, { useCallback, useEffect, useState } from "react";
 import { EmblaOptionsType } from "embla-carousel";
 import useEmblaCarousel from "embla-carousel-react";
@@ -7,9 +8,10 @@ import {
   PrevButton,
   usePrevNextButtons,
 } from "./emblaCarouselArrowButtons";
+import Image from "next/image";
 
 type PropType = {
-  slides: number[];
+  slides: string[];
   options?: EmblaOptionsType;
 };
 
@@ -70,9 +72,13 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
         <div className="embla__container">
           {slides.map((index) => (
             <div className="embla__slide" key={index}>
-              <div className="embla__slide__number">
-                <span>{index + 1}</span>
-              </div>
+              <Image
+                src={index}
+                alt={`Travel image ${index + 1}`}
+                className="embla__slide__number"
+                width={424}
+                height={275}
+              ></Image>
             </div>
           ))}
         </div>
