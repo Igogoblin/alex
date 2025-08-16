@@ -1,6 +1,7 @@
 import Container from "@/components/container/container";
 import redesignMainImage from "../../../public/redesigning/redesigningMain.jpg";
 import Image from "next/image";
+import { RedesigningAbout } from "./sections/redesigning-about";
 
 export default function Redesigning() {
   return (
@@ -13,6 +14,9 @@ export default function Redesigning() {
           width={1140}
           height={648}
         />
+      </Container>
+      <Container>
+        <RedesigningAbout />
       </Container>
     </main>
   );
