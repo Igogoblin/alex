@@ -61,9 +61,8 @@ h2 {
 
 /* embla slider ----------------------- */
 .embla {
-  /* max-width: 48rem; */
   width: 100%;
-  margin: auto;
+  margin: 60px auto;
   --slide-height: 19rem;
   --slide-spacing: 1rem;
   --slide-size: 45%;

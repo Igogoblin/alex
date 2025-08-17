@@ -70,7 +70,7 @@ export const REDESIGNING = {
   summary: {
     title: "summary",
     subtitle:
-      "A case of overengineering — corrected through listening, testing, and reducing to what users actually needed",
+      "A case of over engineering — corrected through listening, testing, and reducing to what users actually needed",
     description:
       "I redesigned a complex table structure for discount rule management, transforming it from a monolithic Access-like grid into a lightweight, focused tool. Through iterative design and live testing, we delivered a solution that honored both business logic and user reality — while creating a scalable foundation for the future.",
     key: "key results",
@@ -81,5 +81,12 @@ export const REDESIGNING = {
       "increased user clarity on rule status and validation",
       "better adoption thanks to “Access-like but better” design",
     ],
+  },
+  version: {
+    subtitle: "basic version",
+    subtitle1: "new version",
+    text: "One of the advantages of this discount format was the ability to display hundreds of thousands of records without pagination or lazy loading. Users could see all payment conditions at once and open the relevant ones to work with the needed discounts.",
+    text1:
+      "Each payment condition has its own set of discounts, now shown on a separate page to avoid overloading the system when switching between tables. Based on user feedback, I grouped rules into five categories and placed them in tabs. This removed horizontal scrolling in most cases and made it easier to review, analyze, and work with discounts.",
   },
 };

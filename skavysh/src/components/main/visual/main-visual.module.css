@@ -33,8 +33,15 @@
   height: 100%;
   object-fit: cover;
   border-radius: 12px;
+  transition: transform 0.8s ease;
 }
-
+.visual_item {
+  overflow: hidden;
+}
+.visual_item:hover img,
+.item_cyberpunk:hover img {
+  transform: scale(1.03);
+}
 .item_cyberpunk {
   max-width: 696px;
   display: flex;

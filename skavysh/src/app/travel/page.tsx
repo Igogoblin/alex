@@ -36,7 +36,13 @@ export default function Travel() {
       <Container>
         <TravelAbout />
       </Container>
-      <Image src={aboutImage} alt="about" width={1340} height={451} />
+      <Image
+        src={aboutImage}
+        alt="about"
+        width={1340}
+        height={451}
+        style={{ margin: "44px auto 60px auto" }}
+      />
       <Container>
         <TravelTypography />
       </Container>

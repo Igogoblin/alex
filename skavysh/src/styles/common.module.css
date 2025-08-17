@@ -1,5 +1,6 @@
 .section-container {
   display: flex;
+  gap: 16px;
 }
 
 .section-title {
@@ -9,7 +10,7 @@
   line-height: 28px;
   max-width: 380px;
   width: 100%;
-  padding-right: 10px;
+  /* padding-right: 10px; */
 }
 
 .section-title--small {
@@ -36,7 +37,12 @@
   line-height: 24px;
   margin-top: 16px;
 }
-
+.section-text {
+  color: var(--color-neutral-60);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+}
 .results {
   margin: 44px 0;
 }
