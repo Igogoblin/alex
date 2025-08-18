@@ -28,7 +28,7 @@ export default function Travel() {
   return (
     <main>
       <Container>
-        <h1 className={style.title}>
+        <h1 className={style.title} id="works">
           Revamping the Design System for a business travel platform
         </h1>
         <Image src={travel} alt="travel" width={1140} height={500} />

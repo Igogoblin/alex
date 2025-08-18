@@ -18,7 +18,7 @@ export default function Redesigning() {
   return (
     <main>
       <Container>
-        <h1 className={style.title}>
+        <h1 className={style.title} id="works">
           Redesigning a Contract discount rule table for enterprise users
         </h1>
         <Image

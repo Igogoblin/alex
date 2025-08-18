@@ -3,7 +3,7 @@ import { REDESIGNING } from "../redesigningData";
 import EnumBlock from "@/components/enumBlock/enumBlock";
 export const RedesigningAbout = () => {
   return (
-    <section>
+    <section id="about">
       <div className={common["section-container"]}>
         <div className={common["section-title"]}>{REDESIGNING.about.title}</div>
         <div>
