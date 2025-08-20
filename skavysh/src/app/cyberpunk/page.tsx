@@ -18,8 +18,8 @@ import cocktailPageImage from "../../../public/cocktail/cocktailMain.jpg";
 import NextProject from "@/components/next-project/next-project";
 export default function Cyberpunk() {
   return (
-    <main>
-      <section className="flex flex-col gap-[44px] mb-[60px] mt-[60px]">
+    <main className="flex flex-col gap-15">
+      <section className="flex flex-col gap-[44px] mt-[60px]">
         <h1 id="works" className="text-[40px] max-w-[694px]">
           Cyberpunk music app for expression, identity, and rebellion
         </h1>
@@ -56,7 +56,7 @@ export default function Cyberpunk() {
         alt="cyberpunk"
         width={1340}
         height={620}
-        style={{ margin: "44px auto 60px auto" }}
+        // style={{ margin: "44px auto 60px auto" }}
       />
       <Container>
         <CyberpunkVisual />

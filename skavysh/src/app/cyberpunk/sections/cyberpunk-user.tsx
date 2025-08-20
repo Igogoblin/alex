@@ -28,7 +28,12 @@ export const CyberpunkUser = () => {
               width={260}
               height={430}
             />
-            <ButtonLink text={"details"} size={44} link={"/cyberpunk"} />
+            <ButtonLink
+              text={"details"}
+              size={44}
+              link={"/cyberpunk"}
+              // className={}
+            />
           </div>
         </div>
       </div>

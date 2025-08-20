@@ -25,6 +25,7 @@ export const CyberpunkCore = () => {
             alt="cyberpunk core"
             width={729}
             height={500}
+            // style={{ margin: "32px auto 60px auto" }}
           />
         </div>
       </div>
