@@ -19,17 +19,20 @@ import NextProject from "@/components/next-project/next-project";
 export default function Cyberpunk() {
   return (
     <main className="flex flex-col gap-15">
-      <section className="flex flex-col gap-[44px] mt-[60px]">
-        <h1 id="works" className="text-[40px] max-w-[694px]">
-          Cyberpunk music app for expression, identity, and rebellion
-        </h1>
-        <Image
-          src={cyberpunkMainImage}
-          alt="cyberpunk"
-          width={1140}
-          height={500}
-        />
-      </section>
+      <Container>
+        <section className="flex flex-col gap-[44px] mt-[60px]">
+          <h1 id="works" className="text-[40px] max-w-[694px]">
+            Cyberpunk music app for expression, identity, and rebellion
+          </h1>
+          <Image
+            src={cyberpunkMainImage}
+            alt="cyberpunk"
+            width={1140}
+            height={500}
+          />
+        </section>
+      </Container>
+
       <Container>
         <CyberpunkAbout />
       </Container>
