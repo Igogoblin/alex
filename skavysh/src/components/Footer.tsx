@@ -3,7 +3,7 @@ import ButtonLink from "./button/button-link";
 const Footer = () => {
   return (
     <footer className="flex justify-between items-start h-[112px] py-4">
-      <div className="flex-direction">
+      <div className="flex flex-col gap-3">
         <p className="footer__text">
           <span>behance</span>{" "}
           <span className="footer__text_span">skavysh</span>

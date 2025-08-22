@@ -7,6 +7,9 @@ const MenuBlock = () => {
   const pathname = usePathname();
   const [activeHash, setActiveHash] = useState("");
   const isHomePage: boolean = pathname === "/";
+
+  const [isOverDarkSection, setIsOverDarkSection] = useState(false);
+
   const menuItems = useMemo(() => {
     return isHomePage
       ? [
@@ -20,7 +23,32 @@ const MenuBlock = () => {
           { text: "contact", href: "#contact" },
         ];
   }, [isHomePage]);
+  // на будущее если будет потребность с разными картинками на других страницах(темные и светлые)
+  useEffect(() => {
+    // Наблюдаем за видимостью секций
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.target.classList.contains("dark-section")) {
+            // Если тёмная секция видна, включаем светлый текст
+            setIsOverDarkSection(entry.isIntersecting);
+          }
+        });
+      },
+      {
+        rootMargin: "0px",
+        threshold: 0.1, // Триггер, когда 10% секции видно
+      }
+    );
+    // Наблюдаем за всеми элементами с классом "dark-section"
+    const darkSections = document.querySelectorAll(".dark-section");
+    darkSections.forEach((section) => observer.observe(section));
 
+    // Очистка при размонтировании компонента
+    return () => {
+      darkSections.forEach((section) => observer.unobserve(section));
+    };
+  }, [pathname]);
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       const visibleSection = entries.find((entry) => entry.isIntersecting);
@@ -43,7 +71,6 @@ const MenuBlock = () => {
   return (
     <nav className={style.menuBlock}>
       {menuItems.map((item, index) => {
-        console.log(activeHash);
         const isActive = activeHash === item.href;
         return (
           <Link
@@ -56,12 +83,17 @@ const MenuBlock = () => {
         );
       })}
       {!isHomePage && (
-        <Link href={"/"} className={style.returning}>
+        <Link
+          href={"/"}
+          className={`${style.returning} ${
+            isOverDarkSection ? style.returningLight : ""
+          }`}
+        >
           <svg
             width="24"
             height="24"
             viewBox="0 0 24 24"
-            fill="none"
+            fill="currentColor"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
