@@ -7,6 +7,7 @@
   position: relative;
   flex-wrap: wrap;
   margin-top: 30px;
+  background: transparent;
 }
 .menu_cv {
   display: flex;
@@ -41,6 +42,7 @@
   flex-direction: column;
   gap: 10px;
   z-index: 1000;
+  /* background: transparent; */
 }
 .cvBlock {
   /* max-width: 172px;
@@ -91,7 +93,10 @@
   word-wrap: none;
   margin-top: 75px;
   cursor: pointer;
+  color: var(--color-neutral-80);
+  mix-blend-mode: difference; /*not working --------------*/
 }
+
 .returning:hover {
   cursor: pointer;
   text-decoration: underline;
@@ -113,7 +118,14 @@
 .activeLink {
   color: var(--color-blue);
   cursor: pointer;
-  text-decoration: underline;
+}
+/* Новые стили для тёмного фона */
+.returningLight {
+  color: #fff; /* Делаем текст белым */
+}
+
+.returningLight svg path {
+  stroke: #fff; /* Делаем иконку белой */
 }
 @media screen and (max-width: 950px) {
   .item_text {
