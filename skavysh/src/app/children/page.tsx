@@ -1,10 +1,10 @@
 import Container from "@/components/container/container";
-import ChildrenHead from "./children-head/childrenHead";
-import ChildrenAbout from "./children-about/childrenAbout";
+import ChildrenHead from "./sections/childrenHead";
+import ChildrenAbout from "./sections/childrenAbout";
 import childrenCentral from "../../../public/children/childrenCentral.jpg";
 import Image from "next/image";
-import ChildrenFigure from "./children-figure/childrenFigure";
-import ChildrenResume from "./children-resume/childrenResume";
+import ChildrenFigure from "./sections/childrenFigure";
+import ChildrenResume from "./sections/childrenResume";
 import NextProject from "@/components/next-project/next-project";
 import avodark from "../../../public/avoDark/avoDark.jpg";
 

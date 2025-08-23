@@ -21,7 +21,7 @@ export const CyberpunkUser = () => {
             title={CYBERPUNK.user.key}
             items={CYBERPUNK.user.keyList}
           />
-          <div className="flex justify-start gap-4 items-end">
+          <div className="flex justify-start flex-col gap-4 text-[28px] lg:flex-row lg:items-end ">
             <Image
               src={cyberpunkUserImage}
               alt="cyberpunk user"
