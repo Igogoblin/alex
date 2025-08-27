@@ -20,16 +20,19 @@ import NextProject from "@/components/next-project/next-project";
 
 export default function Cocktail() {
   return (
-    <main className="flex flex-col gap-15">
-      <section>
-        <h1>Cocktail mixing app concept</h1>
+    <main className="flex flex-col gap-11 md:gap-15">
+      <Container>
+        <h1 id="works" className="mb-[44px] mt-[60px]">
+          Cocktail mixing app concept
+        </h1>
         <Image
           src={cocktailStart}
           alt="cocktail app"
           width={1140}
           height={500}
         />
-      </section>
+      </Container>
+
       <Container>
         <CocktailAbout />
       </Container>
